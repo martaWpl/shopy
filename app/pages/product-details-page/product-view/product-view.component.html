@@ -1,0 +1,16 @@
+<div *ngIf="product" class="product-details-container">
+  <img class="product-details-image" [src]="product?.imagePath" alt="">
+
+  <div class="product-details-footer">
+
+    <div class="left-column">
+      <h2 class="product-details-title">{{product?.title}}</h2>
+      <p class="product-details-description">{{product?.description}}</p>
+    </div>
+
+    <div class="right-column">
+      <a id="add-button" (click)="addProduct(product)">Add</a>
+    </div>
+
+  </div>
+</div>

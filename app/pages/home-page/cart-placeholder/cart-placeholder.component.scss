@@ -1,0 +1,16 @@
+@import "../../../../assets/styles/variables";
+
+.product-labels-container {
+  min-height: 130px;
+  border: 1px dashed white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  #no-products-label {
+    text-align: center;
+    margin-bottom: 0;
+    color: #cfddf4;
+  }
+}

@@ -1,0 +1,20 @@
+app-card {
+  display: inline-flex;
+  background: white;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  width: 100%;
+
+  @media (min-width:768px) {
+    width: calc(50% - 50px);
+    margin: 0 0 50px 50px;
+  }
+  @media(min-width: 992px) {
+    width: calc(25% - 50px);
+  }
+}
+
+
+
+
+

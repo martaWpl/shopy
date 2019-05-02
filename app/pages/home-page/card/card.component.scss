@@ -1,0 +1,33 @@
+@import '../../../../assets/styles/variables';
+
+.card-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  @media(min-width: 992px) {
+    text-align: left;
+  }
+
+  a:hover, a:focus {
+    text-decoration: none;
+    color: $light-blue
+  }
+
+  .card-image {
+    max-width: 150px;
+    @media(min-width: 768px){
+      max-width: 50%;
+    }
+    @media(min-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  .card-title {
+    color: $dark-text;
+  }
+
+  .card-description {
+    color: $light-text;
+  }
+}

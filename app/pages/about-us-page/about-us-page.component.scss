@@ -1,0 +1,15 @@
+.container {
+  app-static-page {
+    margin-top: 120px;
+    background: white;
+    display: block;
+  }
+
+  img {
+    width: 40px;
+  }
+}
+
+:host /deep/ app-static-page .static-page-container p{
+  text-align: justify;
+}

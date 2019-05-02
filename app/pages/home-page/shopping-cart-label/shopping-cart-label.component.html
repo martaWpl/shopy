@@ -1,0 +1,4 @@
+<div *ngIf="product" class="shopping-cart-label">
+  <span *ngIf="product && product.prize" class="product-prize">{{product?.prize}}</span>
+  <p *ngIf="product && product.title" class="product-title">{{product?.title}}</p>
+</div>

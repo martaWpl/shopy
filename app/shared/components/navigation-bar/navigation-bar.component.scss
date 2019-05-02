@@ -1,0 +1,60 @@
+@import '../../../../assets/styles/_variables';
+
+nav {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 65px;
+
+  @media (min-width:768px) {
+    width: 750px;
+  }
+
+  @media (min-width: 992px) {
+    width: 100%;
+    max-width: 970px;
+  }
+  @media(min-width: 1200px) {
+    max-width: 1120px;
+  }
+
+  @media(min-width: 1440px) {
+    max-width: 1380px;
+  }
+
+  #brand-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    align-items: center;
+
+    .nav-link {
+      font-family: $main-font;
+      font-weight: 500;
+      color: $dark-text;
+      padding: 0 25px;
+
+      &:hover, &:focus {
+        text-decoration: none;
+        color: $dark-blue;
+      }
+    }
+
+    #search-link {
+      padding: 24px;
+      background: #f5f5f5;
+      margin-top: -2px;
+
+      #search-icon {
+        height: 19px;
+      }
+    }
+  }
+}

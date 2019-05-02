@@ -1,0 +1,30 @@
+@import '../../../../assets/styles/_variables.scss';
+
+.static-page-container {
+  padding-bottom: 60px;
+
+  img {
+    width: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    margin-bottom: 45px;
+    border: 2px solid $light-blue;
+    border-radius: 50%;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    color: $dark-text;
+    margin-bottom: 30px;
+  }
+  
+  p {
+    white-space: pre-wrap;
+    color: $light-text;
+    width: 400px;
+    margin-left: calc(50% - 200px);
+    line-height: 28px;
+    font-size: 18px;
+  }
+}

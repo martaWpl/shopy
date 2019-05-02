@@ -1,0 +1,10 @@
+<div class="product-labels-container">
+  <p *ngIf="!addedProducts || (addedProducts && addedProducts.length<1)"
+     id="no-products-label">Cart is empty</p>
+
+  <ng-container *ngIf="addedProducts && addedProducts.length>0">
+    <app-shopping-cart-label *ngFor="let product of addedProducts"
+      [product]="product"
+    ></app-shopping-cart-label>
+  </ng-container>
+</div>

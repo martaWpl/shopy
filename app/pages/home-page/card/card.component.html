@@ -1,0 +1,9 @@
+<div *ngIf="product" class="card-container">
+  <a [routerLink]="'product/'+product?.id">
+    <img class="card-image" [src]="product?.imagePath" alt="">
+    <div class="card-footer">
+      <h2 class="card-title">{{product?.title}}</h2>
+      <p class="card-description">{{product?.description}}</p>
+    </div>
+  </a>
+</div>

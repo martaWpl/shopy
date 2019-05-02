@@ -1,0 +1,17 @@
+<div class="shopping-cart-container">
+  <div class="contact-container">
+    <img src="assets/images/contact.svg" alt="" class="cart-icon">
+    <h2 id="contact">Contact</h2>
+    <p id="contact-description">{{description}}</p>
+  </div>
+
+  <div class="cart-container">
+    <img src="assets/images/trolley.svg" alt="" class="cart-icon">
+    <h2 id="cart">Cart
+      <span *ngIf="addedProducts && addedProducts.length>0"
+            id="added-products-counter">( {{ addedProducts.length }} )
+      </span>
+    </h2>
+    <app-cart-placeholder [addedProducts]="addedProducts"></app-cart-placeholder>
+  </div>
+</div>

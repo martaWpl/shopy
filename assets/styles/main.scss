@@ -1,0 +1,34 @@
+@import 'reset';
+@import 'variables';
+@import 'typography';
+@import 'reset';
+@import 'base';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  background: $background;
+
+  h2 {
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .container {
+    @media (min-width: 1200px) {
+      width: 1120px;
+    }
+
+    &.static-page-container {
+      text-align: center;
+      width: 675px;
+      max-width: 100%;
+    }
+  }
+}

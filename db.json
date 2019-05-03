@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "title": "Title",
+      "description": "Description sunt in culpa qui officia deserunt mollit anim id",
+      "imagePath": "assets/images/logo.jpg",
+      "prize": 54
+    }, {
+      "id": 1,
+      "title": "Title1",
+      "description": "Description 1 sint occaecat cupidatat no",
+      "imagePath": "assets/images/logo6.jpg",
+      "prize": 99
+    }, {
+      "id": 2,
+      "title": "Title 2",
+      "description": "Description 2 dolore eu fugiat nulla pariatur. Ex",
+      "imagePath": "assets/images/logo2.jpg",
+      "prize": 14
+    }, {
+      "id": 3,
+      "title": "Title 3",
+      "description": "Description 3 in voluptate velit esse ci",
+      "imagePath": "assets/images/logo3.jpg",
+      "prize": 24
+    }, {
+      "id": 4,
+      "title": "Title 4",
+      "description": "Description 4 a commodo consequat. Duis aute irure dolor",
+      "imagePath":"assets/images/logo4.jpg",
+      "prize": 17
+    }, {
+      "id": 5,
+      "title": "Long name test Long name test",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit llum cepteurn proident est laborum.",
+      "imagePath": "assets/images/logo5.jpg",
+      "prize": 22
+    }, {
+      "id": 6,
+      "title": "Title 6",
+      "description": "Description 6 Ut enim ad minim veniam, quis nostrud exer",
+      "imagePath": "assets/images/logo8.jpg",
+      "prize": 54
+    }, {
+      "id": 7,
+      "title": "Title 7",
+      "description": "Description 7  tion ullamco laboris nisi ut aliquip ex e",
+      "imagePath":"assets/images/logo7.jpg",
+      "prize": 64
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-@import '../../../../assets/styles/_variables';
+@import '~src/assets/styles/_variables';
 
 .shopping-cart-container {
   background: $light-blue;
@@ -6,7 +6,7 @@
   padding: 25px;
   width: 100%;
 
-  @media(min-width: 768px) {
+  @media(min-width: $tablet) {
     width: 260px;
   }
 

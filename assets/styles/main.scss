@@ -21,7 +21,7 @@ body {
   }
 
   .container {
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop-sm) {
       width: 1120px;
     }
 

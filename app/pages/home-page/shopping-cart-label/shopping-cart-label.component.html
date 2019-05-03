@@ -1,4 +1,5 @@
 <div *ngIf="product" class="shopping-cart-label">
-  <span *ngIf="product && product.prize" class="product-prize">{{product?.prize}}</span>
+  <span *ngIf="product && product.prize" class="product-prize">{{product?.prize}} </span>
   <p *ngIf="product && product.title" class="product-title">{{product?.title}}</p>
+  <img (click)="removeProduct(product)" class="remove-icon" src="assets/images/rubbish-bin.svg" alt="">
 </div>

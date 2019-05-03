@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product} from "../../../shared/interfaces/product";
-import {Store} from "../../../shared/store/store.service";
+import {ProductsService} from "../../../shared/services/products.service";
+import {Store} from "@ngrx/store";
 
 @Component({
   selector: 'app-shopping-cart',
@@ -13,11 +14,14 @@ export class ShoppingCartComponent implements OnInit {
     " ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex" +
     " ea commodo consequat.";
 
-  addedProducts: Product[];
+  addedProducts: Product[] = [];
 
-  constructor(private store: Store) { }
+  constructor(private productService: ProductsService,private store: Store<any>) {}
 
   ngOnInit() {
+    this.store.subscribe(state => {
+      this.addedProducts = state.addedProductsReducer.addedProducts;
+    });
   }
 
 }

@@ -1,24 +1,24 @@
-@import '../../../../assets/styles/_variables';
-
+@import "~src/assets/styles/variables";
 nav {
   display: flex;
   margin: 0 auto;
   width: 100%;
   height: 65px;
 
-  @media (min-width:768px) {
+  @media (min-width: $tablet) {
     width: 750px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $desktop-sm) {
     width: 100%;
     max-width: 970px;
   }
-  @media(min-width: 1200px) {
+
+  @media(min-width: $desktop-md) {
     max-width: 1120px;
   }
 
-  @media(min-width: 1440px) {
+  @media(min-width: $desktop-lg) {
     max-width: 1380px;
   }
 

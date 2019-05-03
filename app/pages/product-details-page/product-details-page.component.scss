@@ -1,7 +1,9 @@
+@import '~src/assets/styles/variables';
+
 app-shopping-cart, app-product-view {
   display: inline-flex;
   margin-top: 20px;
-  @media(min-width: 768px) {
+  @media(min-width: $tablet) {
     margin-top: 80px;
   }
 }
@@ -14,7 +16,7 @@ app-product-view {
   flex-wrap: wrap;
   vertical-align: top;
   width: 100%;
-  @media(min-width: 768px) {
+  @media(min-width: $tablet) {
     width: calc(100% - 310px);
     margin-left: 50px;
   }

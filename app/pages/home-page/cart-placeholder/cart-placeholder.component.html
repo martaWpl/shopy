@@ -1,4 +1,5 @@
-<div class="product-labels-container">
+<div class="product-labels-container"
+     [class.empty]="!addedProducts || (addedProducts && addedProducts.length<1)">
   <p *ngIf="!addedProducts || (addedProducts && addedProducts.length<1)"
      id="no-products-label">Cart is empty</p>
 

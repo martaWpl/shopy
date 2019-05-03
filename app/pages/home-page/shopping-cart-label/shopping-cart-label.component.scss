@@ -1,0 +1,32 @@
+@import '~src/assets/styles/variables';
+
+.shopping-cart-label {
+  width: 100%;
+  background: $dark-blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  .product-prize {
+    color: $accent;
+    padding: 12px;
+    padding-right: 0;
+  }
+  .product-title {
+    margin: 0;
+    padding: 12px;
+    flex: auto;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    width: calc(100% - 30px);
+    max-width: calc(100vw - 180px);
+  }
+  .remove-icon {
+    height: 20px;
+    padding: 3px;
+    display: flex;
+    flex: auto;
+    align-content: flex-end;
+    cursor: pointer;
+  }
+}

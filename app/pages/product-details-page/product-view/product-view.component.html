@@ -1,15 +1,20 @@
-<div *ngIf="product" class="product-details-container">
-  <img class="product-details-image" [src]="product?.imagePath" alt="">
+<div class="product-details-container">
+  <img *ngIf="product" class="product-details-image" [src]="product?.imagePath" alt="">
+  <img *ngIf="error" class="product-details-image" [src]="defaultImagePath" alt="">
 
   <div class="product-details-footer">
+    <h2 *ngIf="product" class="product-details-title">{{product?.title}}</h2>
 
-    <div class="left-column">
-      <h2 class="product-details-title">{{product?.title}}</h2>
-      <p class="product-details-description">{{product?.description}}</p>
-    </div>
+    <div class="footer-row">
+      <div class="left-column">
+        <h2 *ngIf="error" class="product-details-title">Product doesn't exist</h2>
+        <p class="product-details-description">{{product?.description}}</p>
+      </div>
 
-    <div class="right-column">
-      <a id="add-button" (click)="addProduct(product)">Add</a>
+      <div *ngIf="product" class="right-column">
+        <a id="add-button" (click)="addProduct(product)" [class.disabled]="alreadyAdded(product)">
+          {{alreadyAdded(product) ? 'Added' : 'Add'}}</a>
+      </div>
     </div>
 
   </div>

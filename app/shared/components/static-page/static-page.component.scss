@@ -22,9 +22,14 @@
   p {
     white-space: pre-wrap;
     color: $light-text;
-    width: 400px;
-    margin-left: calc(50% - 200px);
+    width: 100%;
     line-height: 28px;
     font-size: 18px;
+    max-width: calc(100vw - 50px);
+
+    @media(min-width: $tablet) {
+      width: 400px;
+      margin-left: calc(50% - 200px);
+    }
   }
 }

@@ -1,11 +1,16 @@
-@import "../../../../assets/styles/variables";
+@import "~src/assets/styles/variables";
 
 .product-labels-container {
   min-height: 130px;
   border: 1px dashed white;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+  &.empty {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
   margin-top: 20px;
 
   #no-products-label {
@@ -13,4 +18,10 @@
     margin-bottom: 0;
     color: #cfddf4;
   }
+}
+app-shopping-cart-label {
+  width: calc(100% - 25px);
+  display: block;
+  margin: 13px;
+  margin-bottom: 0;
 }

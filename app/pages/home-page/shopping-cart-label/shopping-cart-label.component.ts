@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Product} from "../../../shared/interfaces/product";
+import {ProductsService} from "../../../shared/services/products.service";
 
 @Component({
   selector: 'app-shopping-cart-label',
@@ -9,9 +10,12 @@ import {Product} from "../../../shared/interfaces/product";
 export class ShoppingCartLabelComponent implements OnInit {
   @Input() product: Product;
 
-  constructor() { }
+  constructor(private productService: ProductsService) { }
 
   ngOnInit() {
   }
 
+  removeProduct(product: Product) {
+    this.productService.removeProductFromCart(product);
+  }
 }

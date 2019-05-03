@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Product} from "../../../shared/interfaces/product";
+import {Store} from "@ngrx/store";
+import {ProductsService} from "../../../shared/services/products.service";
 
 @Component({
   selector: 'app-cart-placeholder',
@@ -11,7 +13,6 @@ export class CartPlaceholderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

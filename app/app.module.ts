@@ -16,6 +16,7 @@ import { CartPlaceholderComponent } from './pages/home-page/cart-placeholder/car
 import { ShoppingCartLabelComponent } from './pages/home-page/shopping-cart-label/shopping-cart-label.component';
 import {Store} from "./shared/store/store.service";
 import { ProductViewComponent } from './pages/product-details-page/product-view/product-view.component';
+import {HttpClient, HttpClientModule, HttpHandler} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ProductViewComponent } from './pages/product-details-page/product-view/
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   exports: [
     HomePageComponent,
@@ -48,7 +50,7 @@ import { ProductViewComponent } from './pages/product-details-page/product-view/
     AboutUsPageComponent,
     ContactPageComponent
   ],
-  providers: [Store],
+  providers: [Store, HttpClient],
   bootstrap: [AppComponent]
 })
 
